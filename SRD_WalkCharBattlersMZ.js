@@ -627,9 +627,9 @@ function Sprite_WalkCharEnemy() {
 	};
 
 	Game_Enemy.prototype.performAttack = function () {
-		var weapons = this.weapons();
-		var wtypeId = weapons[0] ? weapons[0].wtypeId : 0;
-		var attackMotion = $dataSystem.attackMotions[wtypeId];
+		const weapons = this.weapons();
+		const wtypeId = weapons[0] ? weapons[0].wtypeId : 0;
+		const attackMotion = $dataSystem.attackMotions[wtypeId];
 		if (attackMotion) {
 			if (attackMotion.type === 0) {
 				this.requestMotion('thrust');
@@ -1063,7 +1063,7 @@ function Sprite_WalkCharEnemy() {
 	};
 
 	Sprite_WalkCharEnemy.prototype.updateWhiten = function () {
-		var alpha = 128 - (16 - this._effectDuration) * 10;
+		const alpha = 128 - (16 - this._effectDuration) * 10;
 		this.setBlendColor([255, 255, 255, alpha]);
 	};
 
@@ -1127,7 +1127,7 @@ function Sprite_WalkCharEnemy() {
 			if (!this._visualSelect) return;
 			if (this._addedVisualSelect) return;
 			if (!SceneManager._scene) return;
-			var scene = SceneManager._scene;
+			const scene = SceneManager._scene;
 			if (!scene._windowLayer) return;
 			this._addedVisualSelect = true;
 			scene.addChild(this._visualSelectWindow);
@@ -1154,7 +1154,7 @@ function Sprite_WalkCharEnemy() {
 		_Spriteset_Battle_createEnemies.apply(this, arguments);
 		const enemies = $gameTroop.members();
 		const sprites = this._enemySprites;
-		for (var i = 0; i < enemies.length; i++) {
+		for (let i = 0; i < enemies.length; i++) {
 			if (enemies[i].isWalkBattler()) {
 				this._battleField.removeChild(sprites[i]);
 				sprites[i] = new Sprite_WalkCharEnemy(enemies[i]);
