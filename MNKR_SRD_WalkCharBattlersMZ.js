@@ -1,5 +1,6 @@
 /*:
  * @target MZ
+ * @url https://raw.githubusercontent.com/munokura/SRD-MZ-Plugins-Ported-MNKR/refs/heads/main/MNKR_SRD_WalkCharBattlersMZ.js
  * @plugindesc Allows developers to use Walk Character images as side-view battlers for Actors.
  * @author SumRndmDde (MZ port Munokura)
  *
@@ -35,7 +36,7 @@
  * @help
  *
  * Walk Character Battlers
- * Version 1.02.1
+ * Version 1.02
  * SumRndmDde
  *
  *
@@ -195,6 +196,7 @@
  */
 /*:ja
  * @target MZ
+ * @url https://raw.githubusercontent.com/munokura/SRD-MZ-Plugins-Ported-MNKR/refs/heads/main/MNKR_SRD_WalkCharBattlersMZ.js
  * @plugindesc 歩行キャラの画像をアクターや敵のSVバトラーとして使用できます。
  * @author SumRndmDde（改変：ムノクラ）
  *
@@ -267,7 +269,7 @@
  *
  *
  * Walk Character Battlers
- * Version 1.02.1
+ * Version 1.02
  * SumRndmDde
  *
  *
